@@ -26,7 +26,7 @@
 	.intro-section{ padding-top: 250px; }
 	.containerIntro{bottom: 50px; }
 	.profile-logo{ display: none}
-	.downlad-btn{position: absolute; right: 17%; top: 5px; z-index:101;}
+	.downlad-btn{position: absolute; transform:scale(0.84); right: 12%; top: 5px; z-index:101;}
 	/*.locationTop{position: absolute; right: 38%;} */
 	/*.gpsSign{position: absolute; right: 63%} */
 	.brHidden{ visibility: visible}
