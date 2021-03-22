@@ -1,4 +1,3 @@
-
 (function ($) {
 
     "use strict";
@@ -15,6 +14,7 @@
 	panelAccordian();
 
 	$(window).on('load', function(){
+
 		
 		// ISOTOPE PORTFOLIO WITH FILTER
 		if(isExists('.portfolioContainer')){
@@ -45,6 +45,28 @@
 			}); 
 		}
 	
+		var span = document.createElement("span");
+span.innerHTML='Este website está um pouco desatualizado, tanto visualmente, como em termos de projetos.<br><br>Enquanto trabalho numa versão nova, os meus trabalhos mais recentes estão disponíveis através do botão abaixo.<br><br> PS: Muito obrigado por terem visitado o site!'
+
+swal.fire({
+	title: 'Hey Celfocus!',
+	html: span,
+	icon: 'warning',
+	showCancelButton: true,
+	confirmButtonColor: '#3085d6',
+	cancelButtonColor: '#d33',
+	confirmButtonText: 'Quero ver esse portefólio!',
+	cancelButtonText: 'Quero ver o site na mesma!'
+  }).then((result) => {
+	if (result.isConfirmed) {
+	  Swal.fire(
+		'Boa!',
+		'O portefólio vai ser aberto a qualquer momento.',
+		'success'
+	  );
+	  window.open('./images/diogofernandes_portfolio.pdf');
+	}
+  })
 	});
 	
 	
