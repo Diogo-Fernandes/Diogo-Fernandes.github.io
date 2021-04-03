@@ -49,7 +49,7 @@
 span.innerHTML='Este website está um pouco desatualizado, tanto visualmente, como em termos de projetos.<br><br>Enquanto trabalho numa versão nova, os meus trabalhos mais recentes estão disponíveis através do botão abaixo.<br><br> PS: Muito obrigado por terem visitado o site!'
 
 swal.fire({
-	title: 'Hey Celfocus!',
+	title: 'Olá!',
 	html: span,
 	icon: 'warning',
 	showCancelButton: true,
